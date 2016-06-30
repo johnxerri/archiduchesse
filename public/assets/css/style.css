@@ -4,8 +4,16 @@ html, body {
 	color: #F8F8F2;
 }
 
+html {
+	font-size: 62.5%;
+}
+
+body {
+	font-size: 1.5rem;
+}
+
 .container {
-	margin: 50px;
+	
 }
 
 a {
@@ -24,3 +32,50 @@ h1 {
 h2 {
 	color: #66D9EF;
 }
+
+
+main > section, footer > section { /* Largeur max des sections : 1120px; */
+	max-width: 112rem;
+    margin: 5rem auto;
+}
+
+/* ============================ MAIN ============================ */
+/* =========================== ====== =========================== */
+
+
+/* =========================== ====== =========================== */
+/* =========================== ====== =========================== */
+
+/* =========================== FOOTER =========================== */
+/* =========================== ====== =========================== */
+footer {
+	background-color: #f4f4f1;
+	padding: 0.2rem 5rem;
+}
+
+footer article {
+	width: 30%;
+	display: inline-flex;
+}
+
+footer article a { /* BLOCS DE REASSURANCE - MISE EN CONFIANCE */
+	display: block;
+    margin: 0 auto 3rem auto;
+    max-width: 25rem;
+    min-width: 25rem; /* <== pour le test , ca va virer */
+    padding: 1.5rem 3rem;
+    color: #999;
+    line-height: 1.2em;
+    min-height: 7.5rem;
+    background: rgba(0,0,0,0.03);
+    border: .1rem solid rgba(0,0,0,0.08);
+    border-radius: 1rem;
+    position: relative;
+}
+
+footer p {
+	text-align: right;
+}
+
+/* =========================== ====== =========================== */
+/* =========================== ====== =========================== */

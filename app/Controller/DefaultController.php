@@ -15,4 +15,12 @@ class DefaultController extends Controller
 		$this->show('default/home');
 	}
 
+	/**
+	 * Page des conditions de ventess
+	 */
+	public function conditionsVente()
+	{
+		$this->show('default/conditionsVente');
+	}
+
 }
