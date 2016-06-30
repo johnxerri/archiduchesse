@@ -12,7 +12,7 @@ Team : Gary [Dev Front] - John [Dev Back]
 1. Dans un terminal : 
 
   ```
-  cd c:/xampp/htdocs
+  cd /c/wamp/www
   composer create-project wf3/w archiduchesse
   ```
 
