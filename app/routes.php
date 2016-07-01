@@ -32,18 +32,18 @@
 
 		/* ============ ADMIN ============ */
 		// Page Admin Produit
-		['GET', 'admin/produit', 'Admin#produit', 'produit'],
+		['GET', '/admin/produit', 'Admin#produit', 'produit'],
 
 		// Page Admin Produit Creation
-		['GET|POST', 'admin/produitCreation', 'Admin#produitCreation', 'produitCreation'],
+		['GET|POST', '/admin/produitCreation', 'Admin#produitCreation', 'produitCreation'],
 
 		// Page Admin Produit Edition
-		['GET|POST', 'admin/produitEdition/[i:id]', 'Admin#produitEdition', 'produitEdition'],
+		['GET|POST', '/admin/produitEdition/[i:id]', 'Admin#produitEdition', 'produitEdition'],
 
 		// Page Admin Produit Suppression
-		['GET|POST', 'admin/produitSuppression/[i:id]', 'Admin#produitSuppression', 'produitSuppression'],
+		['GET|POST', '/admin/produitSuppression/[i:id]', 'Admin#produitSuppression', 'produitSuppression'],
 
 		// Page Admin membre
-		['GET', 'admin/membre', 'Admin#membre', 'membre'],
+		['GET', '/admin/membre', 'Admin#membre', 'membre'],
 		
 	);

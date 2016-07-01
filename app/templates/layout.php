@@ -25,19 +25,27 @@
 	<link rel="stylesheet" href="<?= $this->assetUrl('css/style.css') ?>">
 </head>
 <body>
-	<div class="container">
+	<div class="container-fluid">
 		<header class="row">
 			
 		</header>
 
 		<main class="row">
 
-			<!-- 1ere section pour afficher les titres de la vue -->
-			<section class="col-md-12">
-				<h1>W :: <?= $this->e($title) ?></h1>
-			</section>
-			<!-- Affichage du contenu de la vue -->
-			<?= $this->section('main_content') ?>
+			<div class="container">
+				
+				<div class="row">
+					
+					<!-- 1ere section pour afficher les titres de la vue -->
+					<section class="col-md-12">
+						<h1>W :: <?= $this->e($title) ?></h1>
+					</section>
+					<!-- Affichage du contenu de la vue -->
+					<?= $this->section('main_content') ?>
+					
+				</div>
+
+			</div>
 
 		</main>
 
