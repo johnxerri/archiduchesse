@@ -3,7 +3,8 @@
 namespace Controller;
 
 use \W\Controller\Controller;
-use \Manager\ProduitsManager;
+use \Manager\ProduitManager;
+use \Manager\CategorieManager;
 /* Controller */
 class AdminController extends Controller {
 
@@ -12,7 +13,7 @@ class AdminController extends Controller {
 		/* Cette fonction permet de controler le role d'un utilisateur (admin ou pas ) */
 		
 		if (isset($_POST['creer'])) {
-			$manager = new ProduitsManager();
+			$manager = new ProduitManager();
 			/*$manager->insert($_POST['myform']);*/
 			$this->redirectToRoute('admin/produit');
 		}		
@@ -26,7 +27,7 @@ class AdminController extends Controller {
 	 */
 	public function produitEdition($id) {
 	
-		$manager = new ProduitsManager();
+		$manager = new ProduitManager();
 		$article = $manager->find($id);
 
 		if (isset($_POST['modifier'])) {
@@ -41,7 +42,7 @@ class AdminController extends Controller {
 
 	public function produitSuppression($id) {
 	
-		$manager = new ProduitsManager();
+		$manager = new ProduitManager();
 		$manager->delete($id);
 		$this->redirectToRoute('admin/produit');
 	}
@@ -51,6 +52,18 @@ class AdminController extends Controller {
 		$this->show('admin/produit');
 		
 		
+	}
+
+	public function categorieCreation() {
+		if (isset($_POST['creerCat'])) {
+			$manager = new CategorieManager();
+			$manager->insert($_POST['myform']);
+			$this->redirectToRoute('categorieCreation');
+		}		
+		
+		$manager = new CategorieManager();
+		$categorie = $manager->findAll();
+		$this->show('admin/categorieCreation', [ 'categorie' => $categorie ]);
 	}
 
 	

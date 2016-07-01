@@ -34,6 +34,9 @@
 		// Page Admin Produit
 		['GET', '/admin/produit', 'Admin#produit', 'produit'],
 
+		// Page Admin Categorie Creation
+		['GET|POST', '/admin/categorieCreation', 'Admin#categorieCreation', 'categorieCreation'],
+
 		// Page Admin Produit Creation
 		['GET|POST', '/admin/produitCreation', 'Admin#produitCreation', 'produitCreation'],
 
