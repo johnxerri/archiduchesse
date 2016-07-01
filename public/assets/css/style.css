@@ -35,11 +35,6 @@ h2 {
 }
 
 
-main > section, footer > section { /* Largeur max des sections : 1120px; */
-	max-width: 112rem;
-    margin: 5rem auto;
-}
-
 /* =========================== HEADER =========================== */
 /* =========================== ====== =========================== */
 
@@ -65,11 +60,6 @@ header {
 footer {
 	background-color: #f4f4f1;
 	padding: 0.2rem 5rem;
-}
-
-footer article {
-	width: 30%;
-	display: inline-flex;
 }
 
 footer article a { /* BLOCS DE REASSURANCE - MISE EN CONFIANCE */

@@ -2,7 +2,7 @@
 
 <?php $this->start('main_content') ?>
 
-	<section>
+	<section class="col-md-12">
 		
 		<h2>I Le Client</h2>
 
