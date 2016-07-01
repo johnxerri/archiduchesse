@@ -3,6 +3,7 @@
 namespace Controller;
 
 use \W\Controller\Controller;
+use \Manager\ArticleManager;
 
 class DefaultController extends Controller
 {
@@ -12,7 +13,9 @@ class DefaultController extends Controller
 	 */
 	public function home()
 	{
-		$this->show('default/home');
+		$manager = new ArticleManager();
+		$produits = $manager->findAll(); // findAll() permet de tout recuperer
+		$this->show('default/home', [ 'liste_des_produits' => $produits ]);
 	}
 
 	/**
