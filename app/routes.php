@@ -2,19 +2,19 @@
 	
 	$w_routes = array(
 
-		# Home¨Page et conditions de vente 
-		['GET', '/', 'Default#home', 'home'],	
+		// Home page
+		['GET', '/', 'Default#home', 'home'],
 
-		# Page categories
+		// Page Catégorie
 		['GET', '/categorie', 'Default#categorie', 'categorie'],
 
-		# Page detail 
+		// Page Detail
 		['GET', '/detail', 'Default#detail', 'detail'],
 
-		# Page panier 
-		['GET', '/panier', 'Default#panier', 'panier'],
+		// Page panier
+		['GET', '/panier', 'Login#panier', 'panier'],
 
-		# Conditions de vente 
+		// Page Divers
 		['GET', '/conditionsVente', 'Default#conditionsVente', 'conditionsVente'],
 		
 	);
