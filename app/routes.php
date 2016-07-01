@@ -21,13 +21,13 @@
 		['GET', '/panier', 'Login#panier', 'panier'],
 
 		// Page Connexion
-		['GET|POST', '/connexion', 'Login#connexion', 'connexion'],
+		// ['GET|POST', '/connexion', 'Login#connexion', 'connexion'],
 
-		// Page Inscription
-		['GET|POST', '/inscription', 'Login#inscription', 'inscription'],
+		// // Page Inscription
+		// ['GET|POST', '/inscription', 'Login#inscription', 'inscription'],
 
-		// Page Profil
-		['GET', '/profil', 'Login#profil', 'profil'],
+		// // Page Profil
+		// ['GET', '/profil', 'Login#profil', 'profil'],
 
 
 		/* ============ ADMIN ============ */
