@@ -45,7 +45,7 @@ main > section, footer > section { /* Largeur max des sections : 1120px; */
 
 header {
 	height: 100%;
-    background-image: url('img/bg.png');
+    background: #eee url('css/img/bg.png') fixed;
 }
 
 /* =========================== ====== =========================== */
