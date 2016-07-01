@@ -1,9 +1,15 @@
 <?php $this->layout('layout', ['title' => 'Accueil']) ?>
 
 <?php $this->start('main_content') ?>
-	<section class="col-md-12">
-		<h2>Let's code.</h2>
-		<p>Vous avez atteint la page d'accueil. Bravo.</p>
-		<p>Et maintenant, RTFM dans <strong><a href="../docs/tuto/" title="Documentation de W">docs/tuto</a></strong>.</p>
+	<section role="section" class="col-md-12">
+	
+		<?php foreach ($liste_des_articles as $produits): ?>
+			<?php //var_dump($produits); ?>
+			<article class="col-md-4">
+				<div><a href=""><img src="<?= $this->assetUrl('img/beige-cafe-au-lait.jpg') ?>"></a></div>
+				<div><h3>beige-cafe-au-lait.jpg</h3></div>
+			</article>
+		<?php endforeach; ?>
+		
 	</section>
 <?php $this->stop('main_content') ?>
